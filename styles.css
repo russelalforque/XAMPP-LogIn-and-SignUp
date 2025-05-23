@@ -3,7 +3,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgb(86, 86, 153);
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(86, 86, 153);
     font-family: Arial, sans-serif;
 }
 
@@ -16,14 +18,15 @@ body {
 .container {
     border-radius: 30PX;
     background-color: white;
-    box-shadow:  0px 0px 5px #888888;
+    box-shadow: 0px 0px 5px #888888;
 }
 
-label{
+label {
     font-weight: bold;
 }
 
-h1,form {
+h1,
+form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -33,14 +36,21 @@ h1,form {
     border-radius: inherit;
 }
 
-h1{
+h1 {
     padding: unset;
 }
 
-.btn{
+.btn {
     color: white;
-    background-color:rgb(86, 86, 153);
+    background-color: rgb(86, 86, 153);
     height: 40px;
     width: 80px;
     border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(70, 70, 121);
 }
